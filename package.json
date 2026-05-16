@@ -1,0 +1,36 @@
+{
+  "name": "afterclose2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "expo start --port 8082 --clear",
+    "android": "expo start --android --port 8082 --clear",
+    "ios": "expo start --ios --port 8082 --clear",
+    "web": "expo start --web --port 8082 --clear",
+    "server": "node server.js",
+    "api": "node server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cloudinary": "^2.10.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "expo": "~54.0.33",
+    "expo-image-picker": "~17.0.11",
+    "expo-status-bar": "~3.0.9",
+    "expo-video": "~3.0.16",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongodb": "^7.2.0",
+    "mongoose": "^9.6.2",
+    "multer": "^2.1.1",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-web": "^0.21.0"
+  },
+  "private": true
+}

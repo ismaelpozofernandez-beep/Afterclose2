@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "afterclose2",
+    "slug": "afterclose2",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "AfterClose necesita acceder a la camara para crear publicaciones.",
+        "NSPhotoLibraryUsageDescription": "AfterClose necesita acceder a tus fotos y videos para crear publicaciones."
+      }
+    },
+    "android": {
+      "permissions": [
+        "CAMERA",
+        "READ_MEDIA_IMAGES",
+        "READ_MEDIA_VIDEO"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "usesCleartextTraffic": true,
+      "package": "com.santosmov2174.afterclose2"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "e4f4dcd9-9c69-4b12-97a0-f0c995606953"
+      }
+    },
+    "plugins": [
+      "expo-video"
+    ]
+  }
+}
