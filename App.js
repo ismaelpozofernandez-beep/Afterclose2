@@ -110,7 +110,13 @@ export default function App() {
     clearTimeout(timer);
 
     const raw = await res.text();
-    const data = raw ? JSON.parse(raw) : {};
+    let data = {};
+    try {
+      data = raw ? JSON.parse(raw) : {};
+    } catch (_err) {
+      const preview = raw.replace(/\s+/g, " ").slice(0, 120);
+      throw new Error(`El backend no devolvio JSON en ${API}${path}. Respuesta: ${preview}`);
+    }
 
     if (!res.ok) throw new Error(data.error || "Algo ha fallado");
 
