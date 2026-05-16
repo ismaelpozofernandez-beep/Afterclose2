@@ -9,7 +9,7 @@ const { v2: cloudinary } = require("cloudinary");
 require("dotenv").config();
 
 const app = express();
-const PORT = Number(process.env.API_PORT || process.env.PORT) || 3000;
+const PORT = Number(process.env.PORT || process.env.API_PORT) || 3000;
 const MONGO_URI = process.env.MONGO_URI;
 const JWT_SECRET = process.env.JWT_SECRET || "dev-secret-change-me";
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
